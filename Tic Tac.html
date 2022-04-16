@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic Tac</title>
+        <link rel="stylesheet" type="text/css" href="imagens/font-svg/bootstrap-icons.css">
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/meus-estilos.css">
+        <script src="js-bootstrap/bootstrap.bundle.js"></script>
+        <script src="js-basic/myScript.js"></script>
+        <script src="js-basic/Controle-de-jogo.js"></script>
+        <script src="js-basic/vf-result.js"></script>
+        <script>
+      </script>
+
+      </head>
+
+<body id="html-5-body"> 
+     <header>
+        <nav id="cimo" class="navbar navbar-expand-md navbar-dark bg-ligth" style="background-color: rgb(4, 97, 71)">
+            <div class="container-fluid">
+              <li class="navbar-brand" style="list-style: none;"><h2>TIC TAC - GAME</h2></li>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+               aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-1">
+                    <li class="nav-item"> 
+                        <button class="btn btn- btn-md" id="btn-cimo" onclick="alterar_modo()"><img src="icons/moon.svg" style="width: 1.6rem;" id="moon" alt=""></button>
+                      </li>
+                      &nbsp;&nbsp;
+                      <li class="nav-item"> 
+                        <button class="btn btn-success btn-md" id="btn-cimo1" onclick="pt_En()"><img src="icons/pt-en1.svg" id="pt-en-1" style="width: 3rem;" alt=""> 
+                          </li></button>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="link-cimo" href="#" onclick="ajuda()">Ajuda</a>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/" id="to-disable" onclick="sugestao()"> Sugestões </a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+          
+    </header>
+    <br><br>
+    <div class="container">
+        <div class="row" id="row-div">
+            <div class="col-lg-5" id="new-content">
+                <h1>Tic Tac</h1>
+                <p>O famoso Jogo de <i><img src="icons/x.svg" alt="" id="icon"></i> e <i><img src="icons/circle.svg" id="icon1"  style="width: .9rem;" alt=""></i>
+                , Jogo antigo com algum tempo de existencia, para recordar o jogo criamos este blog para relembra-lo
+                como é bom o jogo, para coleção de jogos antigos cá vai mais um clássico.</p>
+               <button type="submit" class="btn btn-lg btn-success btn-block" id="btn-local" onclick="processar()">
+                Jogar</button>  
+                </div>
+                
+            <div class="col-lg-1">
+            <br>
+            </div>
+            <div class="col-lg-4" id="new-content" style="display: grid;">
+                <div id="text-div">
+                  <p class="text-success">Desenvolvido pela: <br></p>
+                  <b>KeyCode - Angola</b>
+                  <br><i>"Desfrute da experiencia boa de relembrar jogos classicos, 
+                    acompanhe a evolução da plataforma e divirta-se em nossa nobre companhia".</i><br>
+                  <b>Nosso CEO - José Alfredo Mário Dos Santos</b>
+                </div>
+              </div>
+        </div>
+        <br>
+        
+        <div class="row">
+          <div class="col-lg-4" id="new-content">
+            <form action="">
+              <h1>Updates</h1>
+              <div  class="form-group">
+              <p>Para estar informado sobre atualizações futuras disponibilize-nos seu email.</p>
+              <input type="email" name="" class="form-control" aria-describedby="emailHelp" 
+               placeholder="digite seu email" id="inp">
+              </div><br>
+              <div class="form-group">
+              <button type="submit" class="btn btn-lg btn-success" onclick="validar_InpEmail()">Submeter</button>
+              </div> 
+            </form>
+          </div>
+          <div class="col-2">
+          </div>
+           <div class="col-lg-4" id="new-content">
+            <form action="">
+              <h1>Sugestões</h1>
+              <div  class="form-group" id="form1q">
+              <p>Deixa suas Sugestões na caixa de texto, diga o que acha que devemos melhorar,
+              de-nos o seu parecer, fazendo isso esta contribuindo para a evoluir a nossa plataforma TIC TAC e 
+              nos ajudando a melhorar para a próxima Versão.</p>
+              <textarea name="" id="textarea-0" class="form-control" placeholder="Escreva sua sugestão..." cols="30" maxlength="10000" rows="2"></textarea>
+              </div><br>
+              <div class="form-group">
+              <button type="submit" class="btn btn-lg btn-success" onclick="validar_textoArea()">Enviar</button>
+              </div> 
+            </form>
+          </div>
+        </div>
+</div>
+          ­  
+    <footer class="bd-footer py-5 mt-5 bg-ligth" id="footer-down">
+      <div class="container-fluid">
+        <div class="row">
+      <div class="col-md-6">
+      <h2 style="font-size: 300%;"><strong>TIC TAC - GAME</strong></h2>
+      </div>
+      <div class="col-md-2">
+       <ul class="mb-2 mb-lg-1">
+         <p>Ligações</p>
+         <li><a href="https://github.com/Josemario17">Github</a></li>
+         <li><a href="https://facebook.com/josy.dossantos.1004?refid=52&__tn__=C-R">Facebook</a></li>
+         <li><a href="/">webSite</a></li>
+       </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="mb-2 mb-lg-1">
+          <p>Outros</p>
+          <li><a href="/" data-bs-toggle="modal" data-bs-target="#ModalCenter">Doações</a></li>
+          <li><a>Versão 0.01KC</a></li>
+        </ul>
+      </div>
+    </div>
+  </div> 
+  <br><br>
+  <div class="col-lg-12">
+    </div>
+    <br>
+    <span id="latest-content">Copyrigth(c) 2021 - 2022  KeyCode Angola - Todos direitos reservados</span>
+    </footer>
+
+    <!--A div modal-->
+    <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenter" 
+    aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalCenterTitle">Doações</h5>
+            <button class="btn btn-close" data-bs-toggle="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="../Tic Tac/icons/paypal.svg" alt="paypal"> <img src="../Tic Tac/icons/credit-card-fill.svg" alt="credit-card"> <br> 
+            <span>Nossos Endereços:</span><br>
+            <label for="">Via paypal</label>
+            <input type="text" name="" class="form-control" aria-describedby="text" 
+               value="paypaladress" disabled><br>
+            <label for="">Por VISA</label>
+            <input type="text" name="" class="form-control" aria-describedby="text" 
+            value="VISAadress" disabled><br>
+            <label for="">Pela WISE</label>
+            <input type="text" name="" class="form-control" aria-describedby="text" 
+            value="WISEadress" disabled><br>
+          </div>
+          <div class="modal-footer">
+            <P class="text-muted">Ajude a plataforma a crescer com suas doações, Obrigado!</P>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</body>
+
+</html>
